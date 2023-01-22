@@ -1,25 +1,25 @@
-import { Box, Checkbox, CssBaseline } from "@mui/material";
+import { CssBaseline, ThemeProvider } from "@mui/material";
 import React from "react";
-import Sidebar from "../src/Components/Sidebar/Sidebar";
-import Herocard from "../src/Components/HeroCard/Herocard";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Layout from "./Components/Layout/Layout";
+import Home from "./Pages/Home/Home";
+import { theme } from "./Theme/theme";
 
-const App = () => {
-  const label = { inputProps: { "aria-label": "Checkbox demo" } };
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    children: [{ element: <Home />, path: "/home" }],
+  },
+]);
+
+function App() {
   return (
-    <Box>
+    <ThemeProvider theme={theme}>
+      <RouterProvider router={router} />
       <CssBaseline />
-      <Sidebar></Sidebar>
-      <Checkbox
-        sx={{
-          display: "flex",
-          justifyContent: "center",
-        }}
-        {...label}
-      />
-
-      <Herocard></Herocard>
-    </Box>
+    </ThemeProvider>
   );
-};
+}
 
 export default App;
