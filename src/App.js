@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { Box, Checkbox, CssBaseline } from "@mui/material";
+import React from "react";
+import Sidebar from "../src/Components/Sidebar/Sidebar";
+import Herocard from "../src/Components/HeroCard/Herocard";
 
-function App() {
+const App = () => {
+  const label = { inputProps: { "aria-label": "Checkbox demo" } };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Box>
+      <CssBaseline />
+      <Sidebar></Sidebar>
+      <Checkbox
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+        }}
+        {...label}
+      />
+
+      <Herocard></Herocard>
+    </Box>
   );
-}
+};
 
 export default App;
