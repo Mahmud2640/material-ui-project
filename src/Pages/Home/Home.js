@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import Branding from "./Branding/Branding";
 
 function Home() {
   return (
-    <div>Home</div>
-  )
+    <div>
+      <Branding />
+    </div>
+  );
 }
 
-export default Home
+export default Home;
