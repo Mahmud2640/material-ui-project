@@ -1,14 +1,14 @@
 import React from "react";
 import Branding from "./Branding/Branding";
 import Brand from "./Brands/Brand";
-import Faq from "./Faq/Faq";
+import Services from "./Service/Services";
 
 function Home() {
   return (
     <div>
       <Branding />
       <Brand/>
-      <Faq/>
+      <Services/>
     </div>
   );
 }
