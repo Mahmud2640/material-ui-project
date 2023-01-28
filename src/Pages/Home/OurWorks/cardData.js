@@ -1,0 +1,34 @@
+export const cardData = [
+  [
+    "https://source.unsplash.com/random/200x200?sig=1",
+    "https://source.unsplash.com/random/200x200?sig=2",
+    "https://source.unsplash.com/random/200x200?sig=3",
+    "https://source.unsplash.com/random/200x200?sig=1",
+    "https://source.unsplash.com/random/200x200?sig=2",
+    "https://source.unsplash.com/random/200x200?sig=3",
+  ],
+  [
+    "https://source.unsplash.com/random/200x200?sig=1",
+    "https://source.unsplash.com/random/200x200?sig=2",
+    "https://source.unsplash.com/random/200x200?sig=3",
+    "https://source.unsplash.com/random/200x200?sig=1",
+    "https://source.unsplash.com/random/200x200?sig=2",
+    "https://source.unsplash.com/random/200x200?sig=3",
+  ],
+  [
+    "https://source.unsplash.com/random/200x200?sig=1",
+    "https://source.unsplash.com/random/200x200?sig=2",
+    "https://source.unsplash.com/random/200x200?sig=3",
+    "https://source.unsplash.com/random/200x200?sig=1",
+    "https://source.unsplash.com/random/200x200?sig=2",
+    "https://source.unsplash.com/random/200x200?sig=3",
+  ],
+  [
+    "https://source.unsplash.com/random/200x200?sig=1",
+    "https://source.unsplash.com/random/200x200?sig=2",
+    "https://source.unsplash.com/random/200x200?sig=3",
+    "https://source.unsplash.com/random/200x200?sig=1",
+    "https://source.unsplash.com/random/200x200?sig=2",
+    "https://picsum.photos/seed/picsum/200/300",
+  ],
+];
